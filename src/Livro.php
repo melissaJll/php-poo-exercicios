@@ -3,31 +3,60 @@ class Livro{
     private string $titulo;
     private string $autor;
     private int $paginas = 0;
-    //Titulo
-    public function setTitulo(string $novoTitulo):void{
-        $this->titulo = $novoTitulo;
-    }
 
-    public function getTitulo():string{
+
+
+    /**
+     * Get the value of titulo
+     *
+     * @return string
+     */
+    public function getTitulo(): string
+    {
         return $this->titulo;
     }
-    //Autor
-    public function setAutor(string $novoAutor):void{
-        $this->autor = $novoAutor;
+
+    /**
+     * Set the value of titulo
+     *
+     * @param string $titulo
+     *
+     * @return self
+     */
+    public function setTitulo(string $titulo): self
+    {
+        $this->titulo = $titulo;
+
+        return $this;
     }
 
-    public function getAutor():string{
+
+
+    public function getAutor(): string
+    {
         return $this->autor;
     }
-    //Paginas
-    public function setPaginas(int $novoPaginas):void{
-        $this->paginas = $novoPaginas;
+
+
+    public function setAutor(string $autor): self
+    {
+        $this->autor = $autor;
+
+        return $this;
     }
 
-    public function getPaginas(): int{
+
+
+    public function getPaginas(): int
+    {
         return $this->paginas;
     }
 
 
+    public function setPaginas(int $paginas): self
+    {
+        $this->paginas = $paginas;
 
+        return $this;
+    }
 }
