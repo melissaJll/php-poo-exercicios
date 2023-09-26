@@ -5,29 +5,16 @@ class Livro{
     private int $paginas = 0;
 
 
-
-    /**
-     * Get the value of titulo
-     *
-     * @return string
-     */
     public function getTitulo(): string
     {
         return $this->titulo;
     }
 
-    /**
-     * Set the value of titulo
-     *
-     * @param string $titulo
-     *
-     * @return self
-     */
-    public function setTitulo(string $titulo): self
+
+    public function setTitulo(string $titulo): void
     {
         $this->titulo = $titulo;
 
-        return $this;
     }
 
 
@@ -38,11 +25,10 @@ class Livro{
     }
 
 
-    public function setAutor(string $autor): self
+    public function setAutor(string $autor): void
     {
         $this->autor = $autor;
 
-        return $this;
     }
 
 
@@ -53,10 +39,9 @@ class Livro{
     }
 
 
-    public function setPaginas(int $paginas): self
+    public function setPaginas(int $paginas): void
     {
         $this->paginas = $paginas;
 
-        return $this;
     }
 }
