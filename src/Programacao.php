@@ -1,5 +1,5 @@
 <?php
-require_once "src/Tecnico.php"
+require_once "src/Tecnico.php";
 
 class Programacao extends Tecnico{
     private string $area;
