@@ -5,8 +5,11 @@ class Didatico extends Tecnico{
     private string $disciplina;
     private array $nivel = ["básico", "médio", "superior"];
 
-    public function getNivel():string{
-        return implode(", ", $this->nivel);
+    // public function getNivel():string{
+    //     return implode(", ", $this->nivel);
+    // }
+    public function getNivel():array{
+        return $this->nivel;
     }
 
     public function setNivel(array $novoNivel):void{

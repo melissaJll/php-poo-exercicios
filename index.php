@@ -24,6 +24,9 @@ $D1 = new Didatico;
 $D1->setTitulo("Matemática para o ensino médio");
 $D1->setNivel(["Digital"]);
 $D1->setDisciplina("Matemática");
+$D1->setPaginas(179);
+$D1->setFormato(["Digital", "Fisico"]);
+$D1->setNivel(["Basico","Medio"]);
 
 ?>
 <pre><?=var_dump($P1)?></pre>
@@ -43,7 +46,7 @@ $D1->setDisciplina("Matemática");
     
     <p><?=$T1->getFormato()?></p>
 
-    <h2>Programacao</h2>
+    <h2>Programação</h2>
     <p>Titulo: <?=$P1->getTitulo()?></p>
     <p>Area: <?=$P1->getArea()?></p>
     <p>Número de páginas: <?=$P1->getPaginas()?></p>
@@ -51,10 +54,20 @@ $D1->setDisciplina("Matemática");
     <p>Formato: <?=$P1->getFormato()?></p>
 
 
-    <h2>Didatico</h2>
+    <h2>Didático</h2>
     <p>Titulo: <?= $D1->getTitulo()?></p>
-    <p><?= $D1->getDisciplina()?></p>
-    <p><?= $D1->getNivel()?></p>
+    <p>Disciplina: <?= $D1->getDisciplina()?></p>
+    <p>Número de páginas: <?= $D1->getPaginas()?></p>
+
+    <!-- Neste caso o get retorna como um array, então para percorrer todos os itens usamos um loop com o $D1->getNivel()=array.
+    Econcatenamos com um espaço " "-->
+    <p>Número de páginas: 
+        <?php 
+            foreach($D1->getNivel() as $nivel){
+                echo $nivel." ";
+            } 
+        ?>
+    </p>
 
 
 </body>
