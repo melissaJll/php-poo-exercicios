@@ -10,7 +10,6 @@ abstract class Livro{
         return $this->titulo;
     }
 
-
     public function setTitulo(string $titulo): void
     {
         $this->titulo = $titulo;
