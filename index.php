@@ -38,10 +38,10 @@ $D1->setNivel(["Basico","Medio"]);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 01</title>
+    <title>Exercicio 03</title>
 </head>
 <body>
-    <h1>Exercicio Livros </h1>
+    <h1>Exercicio Livros</h1>
     <hr>
 
     <h2>Técnico</h2>
