@@ -5,7 +5,7 @@
 // $L1->setPaginas(200);
 
 
-use Livraria\{Tecnico, Programacao, Didatico};
+use Livraria\{Tecnico, Programacao, Didatico, Web};
 
 require_once "vendor/autoload.php";
 
@@ -30,8 +30,9 @@ $D1->setPaginas(179);
 $D1->setFormato(["Digital", "Fisico"]);
 $D1->setNivel(["Basico","Medio"]);
 
+$web1 = new Web;
+
 ?>
-<pre><?=var_dump($P1)?></pre>
 
 <!DOCTYPE html>
 <html lang="pt-br">
