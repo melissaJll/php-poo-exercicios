@@ -4,15 +4,15 @@
 // $L1->setAutor("Rainbow rowell");
 // $L1->setPaginas(200);
 
-use Livraria\Didatico;
-use Livraria\Programacao;
-use Livraria\Tecnico;
 
-require_once "src/Tecnico.php";
+use Livraria\{Tecnico, Programacao, Didatico};
+
+require_once "vendor/autoload.php";
+
+
 $T1 = new Tecnico;
 $T1->setFormato(["digital"]);
 
-require_once "src/Programacao.php";
 $P1 = new Programacao;
 $P1->setTitulo("PHP para desenvolvimento Web");
 $P1->setArea("Web");
@@ -22,7 +22,6 @@ $P1->setAutor("Marcelo Xavier Vieira");
 $P1->setFormato(["Fisico"]);
 
 
-require_once "src/Didatico.php";
 $D1 = new Didatico;
 $D1->setTitulo("Matemática para o ensino médio");
 $D1->setNivel(["Digital"]);

@@ -1,0 +1,9 @@
+{
+    "name": "melissa/php-poo-exercicios",
+    "description": "exercicios PHP com Orientação a objetos",
+    "autoload":{
+        "psr-4": {
+            "Livraria\\": "src/"
+        }
+    }
+}
