@@ -4,6 +4,9 @@
 // $L1->setAutor("Rainbow rowell");
 // $L1->setPaginas(200);
 
+use Livraria\Didatico;
+use Livraria\Programacao;
+use Livraria\Tecnico;
 
 require_once "src/Tecnico.php";
 $T1 = new Tecnico;

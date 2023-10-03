@@ -1,4 +1,5 @@
 <?php
+namespace Livraria;
 require_once "src/Livro.php";
 
 class Tecnico extends Livro{
